@@ -98,7 +98,7 @@ int main(int argc, char** argv)
 	LINK_HANDLE link = NULL;
 	MESSAGE_RECEIVER_HANDLE message_receiver = NULL;
 
-	amqpalloc_set_memory_tracing_enabled(true);
+	amqpalloc_set_memory_tracing_enabled(false);
 
 	if (platform_init() != 0)
 	{

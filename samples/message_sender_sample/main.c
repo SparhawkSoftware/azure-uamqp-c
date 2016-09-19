@@ -94,10 +94,10 @@ int main(int argc, char** argv)
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_FILE);
 	_CrtSetReportFile(_CRT_ERROR, _CRTDBG_FILE_STDERR);
-	//_CrtSetBreakAlloc(123);
+	//_CrtSetBreakAlloc(201);
 #endif
 
-	amqpalloc_set_memory_tracing_enabled(true);
+	amqpalloc_set_memory_tracing_enabled(false);
 
 	if (platform_init() != 0)
 	{
